@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='description' content=''>
+    <meta name='keywords' content="">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Left-sidebar -->
+	<aside class="left-sidebar">
+        <a href="index.html" class='logo'>
+            <svg class='logo__img'  viewBox="0 0 170 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                <path d="M38.1599 88.5485C38.1599 88.5485 25.8703 79.0594 31.1318 61.5879C31.1318 61.5879 25.1796 68.3334 24.1611 76.5649C24.1025 77.041 24.0523 77.5202 24.0291 78.0055C23.7186 84.3422 25.9455 88.9898 28.1884 92.0737C29.3083 93.6135 30.6562 94.9733 32.1038 96.209L66.6282 125.642C66.6282 125.642 73.0297 125.827 77.9171 122.533L38.1599 88.5485Z" fill="#0BB3CE"/>
+                <path d="M48.4817 71.4157C48.4817 71.4157 36.1921 61.9266 41.4536 44.4551C41.4536 44.4551 35.5014 51.2006 34.4829 59.432C34.4242 59.9082 34.3741 60.3874 34.3509 60.8727C34.0403 67.2094 36.2673 71.857 38.5102 74.9408C39.6301 76.4806 40.978 77.8405 42.4256 79.0762L69.6504 102.425C69.6504 102.425 76.052 102.609 80.9393 99.3158L48.4817 71.4157Z" fill="#0BB3CE"/>
+                <path d="M125.726 48.791L93.6416 76.2565C92.8842 76.8979 86.8104 82.3956 77.7283 82.6501C77.7283 82.6501 82.7758 87.272 88.9909 87.3093C92.6269 87.5964 96.5985 86.4703 99.1739 84.2817L130.578 57.4631L125.726 48.791Z" fill="#0BB3CE"/>
+                <path d="M133.419 62.5361L89.586 100.06C88.8286 100.701 82.7547 106.199 73.6726 106.454C73.6726 106.454 78.7201 111.075 84.9352 111.113C88.5712 111.4 92.5428 110.274 95.1182 108.085L138.281 71.2248L133.419 62.5361Z" fill="#0BB3CE"/>
+                <path d="M141.094 76.252L86.5989 122.903C85.8415 123.544 79.7676 129.042 70.6855 129.296C70.6855 129.296 75.7331 133.918 81.9481 133.955C85.5842 134.242 89.5558 133.116 92.1312 130.928L145.964 84.9553L141.094 76.252Z" fill="#0BB3CE"/>
+                <path d="M53.7781 32.9666C53.7781 32.9666 54.8644 14 77.5442 14C100.224 14 118.286 14 118.286 14C118.286 14 118.083 23.4836 97.9152 23.4836C77.7478 23.4836 73.1985 23.4836 73.1985 23.4836C73.1985 23.4836 61.3154 23.0418 53.7781 32.9666Z" fill="#0BB3CE"/>
+                <path d="M100.02 33.3752C92.8139 33.3752 83.2379 33.3752 72.6551 33.3752C63.024 33.3752 56.2704 39.3012 55.2605 40.2401C56.9012 43.8601 59.075 46.3362 60.3532 47.5878C66.2853 43.3858 73.3538 42.9708 77.013 42.8588H93.0254C93.0254 42.8588 98.8652 42.9776 104.663 41.3925C106.701 40.8349 108.229 39.9959 109.423 39.1795C109.43 39.1746 109.437 39.1697 109.445 39.1648C109.547 39.095 109.652 39.0252 109.748 38.9542C112.685 36.9591 115.046 33.9756 115.773 29.5C115.774 29.5 111.631 33.3752 100.02 33.3752Z" fill="#0BB3CE"/>
+                <path d="M93.1274 51.4065H77.8156C72.8151 51.4065 69.3466 52.278 66.9583 53.33L75.7121 60.8901C78.6561 60.8901 82.0977 60.8901 86.1341 60.8901C86.1341 60.8901 92.5002 60.9764 97.7721 59.4237C99.7998 58.8264 101.338 58.0271 102.532 57.2107C102.54 57.2058 102.546 57.2009 102.554 57.196C102.656 57.1263 102.76 57.0565 102.857 56.9855C105.794 54.9904 108.154 52.0068 108.882 47.5312C108.881 47.5319 104.739 51.4065 93.1274 51.4065Z" fill="#0BB3CE"/>
+                <path d="M60.779 60.875C60.0179 61.8426 59.0545 62.7018 58.1357 63.4001C59.4445 62.7006 60.7032 62.2024 61.9075 61.8475L60.779 60.875Z" fill="#0BB3CE"/>
+                <path d="M58.6673 52.5524C58.6673 52.5524 46.3777 43.0633 51.6391 25.5918C51.6391 25.5918 45.6869 32.3373 44.6685 40.5688C44.6098 41.0449 44.5597 41.5241 44.5364 42.0094C44.2259 48.3461 46.4529 52.9937 48.6957 56.0776C49.8156 57.6174 51.1635 58.9772 52.6111 60.2129L74.0641 78.7009C74.0641 78.7009 80.4656 78.8857 85.353 75.5919L58.6673 52.5524Z" fill="#0BB3CE"/>
+                </g>
+                <defs>
+                <filter id="filter0_d" x="0" y="0" width="169.964" height="167.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dy="10"/>
+                <feGaussianBlur stdDeviation="12"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                </defs>
+            </svg>    
+            <img src="img/logo.svg" alt="">
+        </a>
+        <div class='left-sidebar__body'>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class='menu__item'>
+                        <a href="index.html" class='menu__link'>
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="22" height="18">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1818 3H2.81818C1.81403 3 1 3.89543 1 5V19C1 20.1046 1.81403 21 2.81818 21H8H10H21.1818C22.186 21 23 20.1046 23 19V5C23 3.89543 22.186 3 21.1818 3ZM10 19H21V10H10V19ZM8 10H3V19H8V10ZM21 8H3V5H21V8Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                                </g>
+                            </svg>    
+                            <span> Панель управления</span>       
+                        </a>
+                    </li>
+                    <li class='menu__item'>
+                        <a href="complex.html" class='menu__link'>
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046 2.89543 14 4 14H20C21.1046 14 22 13.1046 22 12V4C22 2.89543 21.1046 2 20 2ZM4 12V4H20V12H4ZM22 16V18H2V16H22ZM22 22V20H2V22H22Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                            </svg>
+                             <span>Комплекс</span>   
+                        </a>
+                    </li>
+                    <li class='menu__item'>
+                        <a href="balance.html" class='menu__link'>       
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="1" width="20" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4506 1.40266C16.5126 1.09921 17.6196 1.7142 17.923 2.77627C17.9741 2.95495 18 3.13988 18 3.32571V4.99998H20C21.1046 4.99998 22 5.89541 22 6.99998V19C22 20.1045 21.1046 21 20 21H4C2.89543 21 2 20.1045 2 19H2.0267C2.00895 18.8924 2 18.7835 2 18.6742V6.75428C2 5.86132 2.59195 5.07655 3.45056 4.83123L15.4506 1.40266ZM10.1401 19H20V11H18V15.2457C18 16.1386 17.408 16.9234 16.5494 17.1687L10.1401 19ZM20 6.99998V8.99998H18V6.99998H20ZM4 6.75428V18.6743L16 15.2457V3.32571L4 6.75428ZM14 8.99998C14 9.55227 13.5523 9.99998 13 9.99998C12.4477 9.99998 12 9.55227 12 8.99998C12 8.4477 12.4477 7.99998 13 7.99998C13.5523 7.99998 14 8.4477 14 8.99998Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask2)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                                </g>
+                            </svg>         
+                           <span>Баланс</span> 
+                        </a>
+                    </li>
+                    <li class='menu__item'>
+                        <a href="patients.html" class='menu__link'>
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask4" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM19.3995 17.1246C20.4086 15.6703 21 13.9042 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.9042 3.59138 15.6703 4.6005 17.1246C5.72595 15.6381 8.3706 15 12 15C15.6294 15 18.274 15.6381 19.3995 17.1246ZM17.9647 18.7398C17.672 17.6874 15.5694 17 12 17C8.43062 17 6.328 17.6874 6.03532 18.7398C7.6233 20.1462 9.71194 21 12 21C14.2881 21 16.3767 20.1462 17.9647 18.7398ZM12 15C9.76086 15 8 13.4274 8 10C8 7.75576 9.5791 6 12 6C14.4142 6 16 7.92158 16 10.2C16 13.4796 14.2181 15 12 15ZM10 10C10 12.2693 10.8182 13 12 13C13.1777 13 14 12.2984 14 10.2C14 8.95042 13.2157 8 12 8C10.7337 8 10 8.81582 10 10Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask4)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                                </g>
+                            </svg>    
+                            <span>Пациенты</span>  
+                        </a>
+                    </li>
+                    <li class='menu__item'>
+                        <a href="news.html" class='menu__link'>
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask6" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="3" width="20" height="18">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 18V5H16V18C16 18.3506 16.0602 18.6872 16.1707 19H5C4.44772 19 4 18.5523 4 18ZM19 21H5C3.34315 21 2 19.6569 2 18V3H16H17H18V8H20H22V10V18C22 19.6569 20.6569 21 19 21ZM18 10H20V18C20 18.5523 19.5523 19 19 19C18.4477 19 18 18.5523 18 18V10ZM10 7V11H6V7H10ZM14 10V8H11V10H14ZM14 12V14H6V12H14ZM14 17V15H6V17H14Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask6)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                                </g>
+                            </svg> 
+                            <span>Новости</span>   
+                        </a>
+                    </li>
+                    <li class='menu__item'>
+                        <a href="#" class='menu__link'>
+                            <svg class='menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                <mask id="mask7" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6562 20.897L20.8733 18.6798L20.0925 15.843L20.4327 15.0305L23 13.5818V10.4464L20.44 8.99173L20.1055 8.18067L20.8961 5.34235L18.6774 3.12683L15.8403 3.90748L15.0296 3.56758L13.5808 1H10.4454L8.99072 3.56004L8.17985 3.89446L5.34198 3.10281L3.1267 5.31809L3.90748 8.15567L3.56758 8.96634L1 10.4151V13.5496L3.55774 15.0076L3.89252 15.8193L3.10197 18.6572L5.31809 20.8733L8.15567 20.0925L8.96644 20.4325L10.4153 22.999H13.5498L15.0067 20.4412L15.8183 20.1065L18.6562 20.897ZM18.8527 13.6256L17.9809 15.7078L18.6362 18.0886L18.0678 18.657L15.692 17.9951L13.609 18.8542L12.3873 20.999H11.5829L10.3714 18.8529L8.29155 17.9808L5.90947 18.6362L5.34203 18.0688L6.00385 15.693L5.14482 13.6101L3 12.3876V11.583L5.1471 10.3715L6.0192 8.29155L5.36375 5.90947L5.93001 5.34321L8.30576 6.00595L10.3895 5.14655L11.6093 3H12.4129L13.6245 5.1471L15.7044 6.0192L18.087 5.36362L18.6558 5.93166L17.9941 8.30696L18.8534 10.3906L21 11.6103V12.4139L18.8527 13.6256ZM12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask7)">
+                                <rect width="24" height="24" fill="#C2CFE0"/>
+                                </g>
+                            </svg>    
+                            <span>Техническая подержка</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class='task'>
+                <p class='task__description'>
+                    Создайте назначение прямо сейчас
+                </p>
+                <a href="#" class='task__btn'>
+                    Создать
+                </a>
+            </div>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header__inner flex">
+                <div class="header__breadcrumb flex">
+                    <h5 class="title">Подтверждение</h5>
+                </div>
+                <div class="header__right-panel flex">
+                      <div class='panel-inner flex'>
+                        <a href="#" class='btn-style'>Создать назначение</a>
+                        <a href="#" class='panel-btn flex'>+</a>
+                        <div class='user-info flex'>
+                            <div class="user-info__cash flex">
+                                <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
+                                    <mask id="mask10" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="1" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4506 1.40266C16.5126 1.09921 17.6196 1.7142 17.923 2.77627C17.9741 2.95495 18 3.13988 18 3.32571V4.99998H20C21.1046 4.99998 22 5.89541 22 6.99998V19C22 20.1045 21.1046 21 20 21H4C2.89543 21 2 20.1045 2 19H2.0267C2.00895 18.8924 2 18.7835 2 18.6742V6.75428C2 5.86132 2.59195 5.07655 3.45056 4.83123L15.4506 1.40266ZM10.1401 19H20V11H18V15.2457C18 16.1386 17.408 16.9234 16.5494 17.1687L10.1401 19ZM20 6.99998V8.99998H18V6.99998H20ZM4 6.75428V18.6743L16 15.2457V3.32571L4 6.75428ZM14 8.99998C14 9.55227 13.5523 9.99998 13 9.99998C12.4477 9.99998 12 9.55227 12 8.99998C12 8.4477 12.4477 7.99998 13 7.99998C13.5523 7.99998 14 8.4477 14 8.99998Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask10)">
+                                    <rect width="24" height="24" fill="#1E1990"/>
+                                    </g>
+                                </svg>   
+                                <div class='user-info__bonus'>
+                                    <span class='bonus-text'>Бонусы</span>
+                                    <span class='bonus-count'>106. - </span>
+                                </div>
+                            </div>
+                            <div class="user-info__person flex">
+                                <div class="user-info__img">
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <div class="user-info__details">
+                                    <span class='details-name'>Константин К.</span>
+                                    <span class='details-location'>Госпиталь - Нижний-Новгород</span>
+                                </div>
+                            </div>
+                        </div>  
+                      </div>
+                      <div class="burger">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                      </div>
+                      <div class="controls">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                      </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="confirmation flex">
+                <svg class='confirmation__img' width="170" height="168" viewBox="0 0 170 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_dconf)">
+                    <path d="M38.1599 88.5485C38.1599 88.5485 25.8703 79.0594 31.1318 61.5879C31.1318 61.5879 25.1796 68.3334 24.1611 76.5649C24.1025 77.041 24.0523 77.5202 24.0291 78.0055C23.7186 84.3422 25.9455 88.9898 28.1884 92.0737C29.3083 93.6135 30.6562 94.9733 32.1038 96.209L66.6282 125.642C66.6282 125.642 73.0297 125.827 77.9171 122.533L38.1599 88.5485Z" fill="#0BB3CE"/>
+                    <path d="M48.4817 71.4157C48.4817 71.4157 36.1921 61.9266 41.4536 44.4551C41.4536 44.4551 35.5014 51.2006 34.4829 59.432C34.4242 59.9082 34.3741 60.3874 34.3509 60.8727C34.0403 67.2094 36.2673 71.857 38.5102 74.9408C39.6301 76.4806 40.978 77.8405 42.4256 79.0762L69.6504 102.425C69.6504 102.425 76.052 102.609 80.9393 99.3158L48.4817 71.4157Z" fill="#0BB3CE"/>
+                    <path d="M125.726 48.791L93.6416 76.2565C92.8842 76.8979 86.8104 82.3956 77.7283 82.6501C77.7283 82.6501 82.7758 87.272 88.9909 87.3093C92.6269 87.5964 96.5985 86.4703 99.1739 84.2817L130.578 57.4631L125.726 48.791Z" fill="#0BB3CE"/>
+                    <path d="M133.419 62.5361L89.586 100.06C88.8286 100.701 82.7547 106.199 73.6726 106.454C73.6726 106.454 78.7201 111.075 84.9352 111.113C88.5712 111.4 92.5428 110.274 95.1182 108.085L138.281 71.2248L133.419 62.5361Z" fill="#0BB3CE"/>
+                    <path d="M141.094 76.252L86.5989 122.903C85.8415 123.544 79.7676 129.042 70.6855 129.296C70.6855 129.296 75.7331 133.918 81.9481 133.955C85.5842 134.242 89.5558 133.116 92.1312 130.928L145.964 84.9553L141.094 76.252Z" fill="#0BB3CE"/>
+                    <path d="M53.7781 32.9666C53.7781 32.9666 54.8644 14 77.5442 14C100.224 14 118.286 14 118.286 14C118.286 14 118.083 23.4836 97.9152 23.4836C77.7478 23.4836 73.1985 23.4836 73.1985 23.4836C73.1985 23.4836 61.3154 23.0418 53.7781 32.9666Z" fill="#0BB3CE"/>
+                    <path d="M100.02 33.3752C92.8139 33.3752 83.2379 33.3752 72.6551 33.3752C63.024 33.3752 56.2704 39.3012 55.2605 40.2401C56.9012 43.8601 59.075 46.3362 60.3532 47.5878C66.2853 43.3858 73.3538 42.9708 77.013 42.8588H93.0254C93.0254 42.8588 98.8652 42.9776 104.663 41.3925C106.701 40.8349 108.229 39.9959 109.423 39.1795C109.43 39.1746 109.437 39.1697 109.445 39.1648C109.547 39.095 109.652 39.0252 109.748 38.9542C112.685 36.9591 115.046 33.9756 115.773 29.5C115.774 29.5 111.631 33.3752 100.02 33.3752Z" fill="#0BB3CE"/>
+                    <path d="M93.1274 51.4065H77.8156C72.8151 51.4065 69.3466 52.278 66.9583 53.33L75.7121 60.8901C78.6561 60.8901 82.0977 60.8901 86.1341 60.8901C86.1341 60.8901 92.5002 60.9764 97.7721 59.4237C99.7998 58.8264 101.338 58.0271 102.532 57.2107C102.54 57.2058 102.546 57.2009 102.554 57.196C102.656 57.1263 102.76 57.0565 102.857 56.9855C105.794 54.9904 108.154 52.0068 108.882 47.5312C108.881 47.5319 104.739 51.4065 93.1274 51.4065Z" fill="#0BB3CE"/>
+                    <path d="M60.779 60.875C60.0179 61.8426 59.0545 62.7018 58.1357 63.4001C59.4445 62.7006 60.7032 62.2024 61.9075 61.8475L60.779 60.875Z" fill="#0BB3CE"/>
+                    <path d="M58.6673 52.5524C58.6673 52.5524 46.3777 43.0633 51.6391 25.5918C51.6391 25.5918 45.6869 32.3373 44.6685 40.5688C44.6098 41.0449 44.5597 41.5241 44.5364 42.0094C44.2259 48.3461 46.4529 52.9937 48.6957 56.0776C49.8156 57.6174 51.1635 58.9772 52.6111 60.2129L74.0641 78.7009C74.0641 78.7009 80.4656 78.8857 85.353 75.5919L58.6673 52.5524Z" fill="#0BB3CE"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_dconf" x="0" y="0" width="169.964" height="167.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="10"/>
+                    <feGaussianBlur stdDeviation="12"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                    <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+                <h5 class="title">Ваш заказ успешно оформлен</h5>
+                <p class='confirmation__order body-text-s'>
+                    Номер заказа <span class='confirmation__id'>№123456</span> 
+                </p>
+                <p class='confirmation__text body-text-s'>3D ортезы для фиксации лучезяпястного сустава (применяется при травмах кистевого и лучезяпястного суставов (переломы дистальных метаэпифизов лучевой и локтевой костей, переломы и заболевания</p>
+                <a href="index.html" class='btn-style'>вернуться на главную</a>
+            </div>
+        </main>
+    </div>
+    <script src='libs/jquery-min.js'></script>
+    <script src='libs/libs.min.js'></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
